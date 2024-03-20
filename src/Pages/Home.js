@@ -1,7 +1,5 @@
 import React from "react";
-
-import Button from "@mui/material/Button";
-
+import { Button } from 'primereact/button';
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
@@ -51,7 +49,7 @@ function Home() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 0, // Ensure content is above pseudo-element
+        zIndex: 0,
         '&::before': {
           content: '""',
           position: "absolute",
@@ -81,8 +79,8 @@ function Home() {
 
         <br></br>
         <br></br>
-        <h2 className="font-semibold" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Promociones</h2>
-        <div style={{ width: "100%", margin: "1 auto", marginTop: "1rem" }}>
+        <h2 className="font-semibold mt-6 pt-8" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Promociones</h2>
+        <div className="w-100 pt-4 pb-6 ">
           <Slider
             arrows={false}
             dots={true}
@@ -152,33 +150,61 @@ function Home() {
                 </Card>
               </div>
             ))}
-            {/* <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/preview/02_o_car.jpg" alt="Car 1" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/preview/03_r_car.jpg" alt="Car 2" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/04_g_car.jpg" alt="Car 3" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/01_b_car.jpg" alt="Car 4" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/preview/02_o_car.jpg" alt="Car 5" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/preview/03_r_car.jpg" alt="Car 6" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/04_g_car.jpg" alt="Car 7" /></div>
-            <div><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/01_b_car.jpg" alt="Car 8" /></div> */}
+
           </Slider>
 
-          {/* Botón redondeado grande */}
 
 
+          <div class="flex justify-content-between flex-wrap flex-column gap-6	">
+            <div className="flex flex-wrap justify-content-center pt-8 mt-8">
+              <Button severity="danger" rounded  >
+                <h2 className="font-semibold" style={{ color: 'var(--white)', margin: "1rem" }}>Ver Menu</h2>
+              </Button>
+            </div>
 
-            
-          {/* <Grid container spacing={2}>
-            <Grid item lg={5} md={4} xs={3}></Grid>
-            <Grid item lg={2} md={4} xs={6}>
+
+            <div className="flex flex-wrap justify-content-center gap-8 mb-8">
+              <a href="https://www.facebook.com" target="_blank">
+                <Button
+                  className="bg-white"
+                  severity="primary"
+                  rounded
+                  text
+                  aria-label="Facebook"
+                >
+                  <i className="pi pi-facebook p-2" style={{ fontSize: "2rem" }}></i>
+                </Button>
+              </a>
+              <a href="https://www.instagram.com/taqueriaorinoco/?hl=es" target="_blank">
+                <Button
+                  className="bg-white"
+                  severity="danger"
+                  rounded
+                  text
+                  aria-label="Instagram"
+                >
+                  <i className="pi pi-instagram p-2" style={{ fontSize: "2rem" }}></i>
+                </Button>
+              </a>
+
+              <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+
+              <Button
+                className="bg-white"
+                severity="success"
+                rounded
+                text
+                aria-label="WhatsApp"
+              >
+                <i className="pi pi-whatsapp p-2" style={{ fontSize: "2rem" }}></i>
+              </Button>
+              </a>
+
+            </div>
 
 
-              <button class="button button">        
-              <h2 className="font-semibold" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Ver Menu</h2>
-              </button>
+          </div>
 
-            </Grid>
-            <Grid item lg={5} md={4} xs={3}></Grid>
-          </Grid> */}
 
 
 
