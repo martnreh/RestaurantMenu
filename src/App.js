@@ -2,15 +2,14 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Menu from "./Pages/Menu";
 import Favorites from "./Pages/Favorites";
-import { createTheme } from '@mui/material/styles';
 
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/menu" element={<Menu />} />
-      <Route path="/favorites" element={<Favorites />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/menu" element={<Menu/>} />
+      <Route path="/favorites" element={<Favorites/>} />
     </Routes>
   );
 }

@@ -10,6 +10,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { useNavigate } from "react-router-dom"
+
+
 
 
 const array = ["hola", "hola2", "hola3"];
@@ -39,6 +42,13 @@ const sales = [
 ];
 
 function Home() {
+
+  const navigate = useNavigate();
+  const handleMenuClick = () => {
+    navigate('/menu');
+  };
+
+
   return (
     <Box
       sx={{
@@ -77,8 +87,7 @@ function Home() {
           <Grid item lg={5} md={4} xs={3}></Grid>
         </Grid>
 
-        <br></br>
-        <br></br>
+
         <h2 className="font-semibold mt-6 pt-8" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Promociones</h2>
         <div className="w-100 pt-4 pb-6 ">
           <Slider
@@ -91,33 +100,33 @@ function Home() {
             slidesToShow={1}
             slidesToScroll={1}
 
-          // responsive={[
-          //   {
-          //     breakpoint: 1024,
-          //     settings: {
-          //       slidesToShow: 1,
-          //       slidesToScroll: 1,
-          //       infinite: true,
-          //       dots: true
-          //     }
-          //   },
-          //   {
-          //     breakpoint: 600,
-          //     settings: {
-          //       slidesToShow: 1,
-          //       slidesToScroll: 1,
-          //       dots: true
-          //     }
-          //   },
-          //   {
-          //     breakpoint: 480,
-          //     settings: {
-          //       slidesToShow: 1,
-          //       slidesToScroll: 1,
-          //       dots: true
-          //     }
-          //   }
-          // ]}
+            responsive={[
+              {
+                breakpoint: 1480,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 990,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 670,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots: true
+                }
+              }
+            ]}
           >
 
             {sales.map((sale, index) => (
@@ -157,9 +166,11 @@ function Home() {
 
           <div class="flex justify-content-between flex-wrap flex-column gap-6	">
             <div className="flex flex-wrap justify-content-center pt-8 mt-8">
-              <Button severity="danger" rounded  >
-                <h2 className="font-semibold" style={{ color: 'var(--white)', margin: "1rem" }}>Ver Menu</h2>
+           
+            <Button severity="danger" rounded onClick={handleMenuClick}>
+                <h2 className="font-normal" style={{ color: 'var(--white)', margin: "1rem" }}>Ver Menú</h2>
               </Button>
+             
             </div>
 
 
@@ -189,15 +200,15 @@ function Home() {
 
               <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
 
-              <Button
-                className="bg-white"
-                severity="success"
-                rounded
-                text
-                aria-label="WhatsApp"
-              >
-                <i className="pi pi-whatsapp p-2" style={{ fontSize: "2rem" }}></i>
-              </Button>
+                <Button
+                  className="bg-white"
+                  severity="success"
+                  rounded
+                  text
+                  aria-label="WhatsApp"
+                >
+                  <i className="pi pi-whatsapp p-2" style={{ fontSize: "2rem" }}></i>
+                </Button>
               </a>
 
             </div>
