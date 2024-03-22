@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/RestaurantMenu/static/css/main.8c547f95.css",
+    "main.js": "/RestaurantMenu/static/js/main.4dee27e0.js",
+    "static/js/453.9a69b293.chunk.js": "/RestaurantMenu/static/js/453.9a69b293.chunk.js",
+    "static/media/norteña.png": "/RestaurantMenu/static/media/norteña.1cb4e5a84ce99a82bdf8.png",
+    "static/media/campechana.png": "/RestaurantMenu/static/media/campechana.71aab6b6ff450e609efc.png",
+    "static/media/tacos_trompo.png": "/RestaurantMenu/static/media/tacos_trompo.80767259d3fb30ee6099.png",
+    "static/media/tacos_chicharron.png": "/RestaurantMenu/static/media/tacos_chicharron.0dabb19e8d34b61db14b.png",
+    "static/media/pirata.png": "/RestaurantMenu/static/media/pirata.850a6af4890bb5419cb2.png",
+    "static/media/tacos_res.png": "/RestaurantMenu/static/media/tacos_res.e82d1775fc66b101beab.png",
+    "static/media/BackgroundImage.png": "/RestaurantMenu/static/media/BackgroundImage.390e0edb8ac521efdb07.png",
+    "static/media/primeicons.svg": "/RestaurantMenu/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/Inter-italic.var.woff2?v=3.19": "/RestaurantMenu/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
+    "static/media/Inter-roman.var.woff2?v=3.19": "/RestaurantMenu/static/media/Inter-roman.var.ba4caefcdf5b36b438db.woff2",
+    "static/media/primeicons.eot": "/RestaurantMenu/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/RestaurantMenu/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/RestaurantMenu/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/primeicons.woff2": "/RestaurantMenu/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/logo.png": "/RestaurantMenu/static/media/logo.b363beb3499862a3f86a.png",
+    "static/media/slick.svg": "/RestaurantMenu/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/RestaurantMenu/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/RestaurantMenu/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/RestaurantMenu/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/RestaurantMenu/index.html",
+    "main.8c547f95.css.map": "/RestaurantMenu/static/css/main.8c547f95.css.map",
+    "main.4dee27e0.js.map": "/RestaurantMenu/static/js/main.4dee27e0.js.map",
+    "453.9a69b293.chunk.js.map": "/RestaurantMenu/static/js/453.9a69b293.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c547f95.css",
+    "static/js/main.4dee27e0.js"
+  ]
+}
