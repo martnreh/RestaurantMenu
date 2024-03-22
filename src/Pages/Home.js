@@ -3,9 +3,6 @@ import { Button } from 'primereact/button';
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
-import backgroundImage from "../assets/BackgroundImage.png";
-import logo from "../assets/logo.png";
-import campechana from "../assets/campechana.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,8 +11,13 @@ import { useNavigate } from "react-router-dom"
 
 
 
+import backgroundImage from "../assets/BackgroundImage.png";
+import logo from "../assets/logo.png";
+import campechana from "../assets/campechana.png";
+import pirata from "../assets/pirata.png";
+import norteña from "../assets/norteña.png";
 
-const array = ["hola", "hola2", "hola3"];
+
 
 const sales = [
   {
@@ -26,17 +28,17 @@ const sales = [
     description: "3 x 2",
   },
   {
-    title: "Prueba2",
-    oldPrice: "$297",
-    newPrice: "$198",
-    image: campechana,
+    title: "Piratas",
+    oldPrice: "$200",
+    newPrice: "$170",
+    image: pirata,
     description: "2 x 1",
   },
   {
-    title: "Prueba3",
-    oldPrice: "$297",
-    newPrice: "$198",
-    image: campechana,
+    title: "Norteñas",
+    oldPrice: "$200",
+    newPrice: "$180",
+    image: norteña,
     description: "2 x 1",
   },
 ];
@@ -73,9 +75,9 @@ function Home() {
       }}
     >
       <>
-        {array.map((element, index) => {
-          return <Button key={index} variant="text">{element}</Button>;
-        })}
+        
+
+
 
         <Grid container spacing={2}>
           <Grid item lg={5} md={4} xs={3}></Grid>
@@ -88,7 +90,7 @@ function Home() {
         </Grid>
 
 
-        <h2 className="font-semibold mt-6 pt-8" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Promociones</h2>
+        <h2 className="font-semibold mt-4 pt-4" style={{ color: 'var(--white)', paddingLeft: "1rem" }}>Promociones</h2>
         <div className="w-100 pt-4 pb-6 ">
           <Slider
             arrows={false}
@@ -131,7 +133,7 @@ function Home() {
 
             {sales.map((sale, index) => (
               <div>
-                <Card key={index} sx={{ borderRadius: "1rem", backgroundColor: "var(--black)", position: "relative", maxWidth: "24rem", maxHeight: "12rem", display: "flex", marginX: "1rem" }} elevation={5}>
+                <Card key={index} sx={{ borderRadius: "1rem", backgroundColor: "var(--black)", position: "relative", maxWidth: "24rem", minHeight: "12rem" ,maxHeight: "12rem", display: "flex", marginX: "1rem" }} elevation={5}>
                   <div style={{ width: "50%", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", }}>
                     <div style={{ height: "100%", flex: 1, backgroundColor: "var(--red)", justifyContent: "center", alignItems: "center", display: "flex", paddingLeft: "1rem", paddingRight: "1rem" }}>
                       <Grid container justifyContent="center" alignItems="center" spacing={0}>
@@ -152,7 +154,7 @@ function Home() {
                   </div>
                   <div style={{ width: "50%", height: "100%", position: "relative" }}>
                     <img src={sale.image} alt={sale.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                    <div style={{ position: "absolute", bottom: "0", right: "0", paddingBottom: "1rem", paddingRight: "0.2rem" }}>
+                    <div style={{ position: "absolute", bottom: "0", right: "0", paddingBottom: "0.7rem", paddingRight: "0.2rem" }}>
                       <FavoriteIcon style={{ color: 'var(--opaque)', fontSize: "3rem" }}></FavoriteIcon>
                     </div>
                   </div>
@@ -165,7 +167,7 @@ function Home() {
 
 
           <div class="flex justify-content-between flex-wrap flex-column gap-6	">
-            <div className="flex flex-wrap justify-content-center pt-8 mt-8">
+            <div className="flex flex-wrap justify-content-center pt-6 mt-6">
            
             <Button severity="danger" rounded onClick={handleMenuClick}>
                 <h2 className="font-normal" style={{ color: 'var(--white)', margin: "1rem" }}>Ver Menú</h2>
@@ -175,7 +177,7 @@ function Home() {
 
 
             <div className="flex flex-wrap justify-content-center gap-8 mb-8">
-              <a href="https://www.facebook.com" target="_blank">
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                 <Button
                   className="bg-white"
                   severity="primary"
@@ -186,7 +188,7 @@ function Home() {
                   <i className="pi pi-facebook p-2" style={{ fontSize: "2rem" }}></i>
                 </Button>
               </a>
-              <a href="https://www.instagram.com/taqueriaorinoco/?hl=es" target="_blank">
+              <a href="https://www.instagram.com/taqueriaorinoco/?hl=es" target="_blank" rel="noreferrer">
                 <Button
                   className="bg-white"
                   severity="danger"
@@ -198,7 +200,7 @@ function Home() {
                 </Button>
               </a>
 
-              <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+              <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" rel="noreferrer">
 
                 <Button
                   className="bg-white"
